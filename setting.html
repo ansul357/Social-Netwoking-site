@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>HOME PAGE</title>
+<link rel="stylesheet" type="text/css" href="index.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<!-- main container -->
+		<main>
+				<!-- navbar -->
+				<nav class="navbar">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="privacy.html">Privacy</a></li>
+						<li><a href="public.html">Public Post</a></li>
+						<li><a href="C:\Users\ksshivoham\Downloads\web\categories.html">Notification</a></li>
+						</ul>
+						
+				</nav>
+	
+		</main>
+		<div class="list-group">
+  <button type="button" class="list-group-item list-group-item-action active">
+    General setting
+  </button>
+  <button type="button" class="list-group-item list-group-item-action" id="name" >Name</button>
+  <a href="#" onclick="nam()">Edit</a>
+  <button type="button" class="list-group-item list-group-item-action" id="name1" >UserName</button> <a href="#" onclick="namchange()">Edit</a>
+  <button type="button" class="list-group-item list-group-item-action" id="name2">Place</button> <a href="#" onclick="placechange()">Edit</a>
+  <button type="button" class="list-group-item list-group-item-action" id="name3" >Date of Birth </button> <a href="#" onclick="DOBchange()">Edit</a>
+</div>
+<script >
+	function nam()
+	{
+		var x=prompt("enter new name");
+		document.getElementById("name").innerHTML=x;
+	}
+	function namchange()
+	{
+		var x=prompt("Enter new Name");
+		document.getElementById("name1").innerHTML=x;
+	}
+
+function placechange()
+{
+	var x=prompt("Enter your New location");
+		document.getElementById("name2").innerHTML=x;
+}
+function DOBchange()
+{
+	var x=prompt("Enter Date of Birth(MM/DD/YY)");
+		document.getElementById("name3").innerHTML=x;
+}
+
+</script>
+</body>
+</html>

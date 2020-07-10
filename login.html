@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+     <meta charset="UTF-8">
+     <title>LOGIN PAGE</title>
+     <link rel="stylesheet" href="lo.css">
+  <link rel="icon" href="download1.png" type="image/png" /> 
+  <script type="text/javascript" src="open.js"></script>
+</head>
+<body>
+ <div id="banner">
+    <h2 id="title">
+  KEM CHOO
+    </h2>
+    <h5 id="subtitle">
+       Connect    </h5>
+  </div>
+    
+  <div class ="ima" >
+  
+      <form method="post" >
+       <div id="login-box">
+  <div class="left">
+    <h1>LOG IN</h1>
+    
+    <input type="text" name="username" placeholder="Username"  id="uname" required />
+    <input type="password" name="password" placeholder="Password" id="pass" required />
+    <input type="checkbox" name=" Remember Me" align="center">Remember Me<br>
+    
+    <input type="submit" name="signup_submit" value="Log me up"  onclick=" return vali()"  />
+    <p align="center" style=""><a href="sign.html" style="text-decoration: none; font-weight: bold; font-size: 15px; color: #af0819;">Create An Account</a></p>
+  </div>
+
+  </form>
+
+  <div class="right">
+    <span class="loginwith">Sign in with<br />social network</span>
+    
+    <button class="social-signin facebook" onclick="window.open('https://www.facebook.com/')">Log in with facebook</button>
+    <button class="social-signin twitter" onclick="window.open('https://twitter.com/login?lang=en')">Log in with Twitter</button>
+    <button class="social-signin google" onclick="window.open('https://accounts.google.com/signin/v2/sl/pwd?service=oz&hl=en-US&flowName=GlifWebSignIn&flowEntry=ServiceLogin')">Log in with Google+</button>
+  </div>
+
+  <div class="or">OR</div>
+</div>
+<!--footer start-->
+ <div id="footer">
+    <h4 id="footertitle">
+        KEM CHOO ©
+      </h4>
+    <h4 id="footercontent">
+        Connect
+        <br>
+        Questions? Comments? Contact us at                  <img src="images.png" alt="Contact us" width="80px" height="40px" id="imag1" onmouseover="ima()" onmouseout="document.getElementById('imag1').src='images.png'"><br>
+                support@kemchoo.org 
+
+        <br>
+        Founded in 2018 
+    </h4>
+  </div>
+</body>
+</html>
